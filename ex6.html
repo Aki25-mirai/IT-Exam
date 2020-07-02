@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Calculator</title>
+	<link rel="stylesheet" type="text/css" 
+	href="css/bootstrap.min.css">
+</head>
+<body>
+<script type="text/javascript" src="js/jquery.min.js">
+</script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js">
+</script>
+<!-- js code -->
+<script type="text/javascript">
+	
+    	function plus()
+    	{
+    		let a = document.getElementById('firstnumber').value;
+			let b = document.getElementById('secondnumber').value;
+    		document.getElementById("result").innerHTML = a + b;
+    	}
+    	function minus()
+    	{
+    		let a = document.getElementById('firstnumber').value;
+			let b = document.getElementById('secondnumber').value;
+    		document.getElementById("result").innerHTML = a - b;
+    	}
+    	function multiply()
+    	{
+    		
+    		let a = document.getElementById('firstnumber').value;
+			let b = document.getElementById('secondnumber').value;
+    		document.getElementById("result").innerHTML = a * b;
+    	}
+    	function divide()
+    	{
+    		
+    		let a = document.getElementById('firstnumber').value;
+			let b = document.getElementById('secondnumber').value;
+    		document.getElementById("result").innerHTML = a / b;
+    	}
+</script>
+<div class="jumbotron">
+	<div class="container">
+	<h1 class="display-4">Calculator</h1>
+	</div>
+</div>
+<!-- Jumbotron ends -->
+<div class="container py-3">
+	<form>
+		<div class="row offset-1">
+			<div class="col-md-3">
+					<div class="form-group">
+						<label for="firstnumber">First Number:</label>
+					</div>
+			</div>
+			<div class="col-md-9">
+					<div class="form-group">
+						<input type="text" name="firstnumber" 
+						class="form-control" id="firstnumber">
+					</div>
+			</div>
+		</div>
+		<div class="row offset-1">
+			<div class="col-md-3">
+				<div class="form-group">
+					<label for="secondnumber">Second Number:
+					</label>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="form-group">
+					<input type="text" name="secondnumber" 
+					class="form-control "
+					id="secondnumber">
+				</div>
+			</div>
+		</div>
+		<div class="row offset-1">
+		<div class="col-md-3">
+			<button type="button" class="btn btn-outline-info btn-block my-3" onclick="plus()">+</button>
+		</div>
+		<div class="col-md-3">
+			<button type="button" class="btn btn-outline-danger btn-block my-3" onclick="minus()">-</button>
+		</div>
+		<div class="col-md-3">
+			<button type="button" class="btn btn-outline-primary
+			btn-block my-3" onclick="multiply()">*</button>
+		</div>
+		<div class="col-md-3">
+			<button type="button" class="btn btn-outline-success btn-block my-3" onclick="divide()">/</button>
+		</div>
+		<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+		</div>
+	</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Value of textarea</title>
+	<link rel="stylesheet" type="text/css" 
+	href="css/bootstrap.min.css">
+</head>
+<body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js">
+	</script>
+	<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var comment = $.trim($("#comment").val());
+            if(comment != ""){
+                // Show alert dialog if value is not blank
+                alert(comment);
+            }
+        });
+        
+    });
+</script>
+<div class="container mt-5 text-center">
+	<h5>Type something in textarea and get the text of textarea</h5>
+	<textarea id="comment" rows="5" cols="50"></textarea>
+    <p><button type="button" class="btn btn-primary">Get Value</button></p>
+</div>
+
+</body>
+</html>

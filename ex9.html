@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toggle Text</title>
+	<link rel="stylesheet" type="text/css" 
+	href="css/bootstrap.min.css">
+</head>
+<body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js">
+	</script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#toggle').click(function()
+            {
+                $('.badge-success').toggle();
+            })
+        })
+    </script>
+    <div class="container text-center mt-5">
+        <span class="badge badge-success">Toggle Text</span>
+        <br>
+        <button class="btn btn-success mt-5" id="toggle">TOGGLE
+        </button>
+    </div>
+
+</body>
+</html>
